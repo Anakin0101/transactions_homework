@@ -22,7 +22,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>Project</Text>
+        <Text>Project Transactions</Text>
       </View>
     </SafeAreaView>
   );
