@@ -3,7 +3,7 @@ import {View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import STATUSCOLORS from '../../constants/statusColors';
 import CURRENCY from '../../constants/currency';
 import {Styles as styles} from './styles';
-import COLORS from '../../constants/colors';
+
 const TransactionItem = ({dateTime, AddReceiptPhoto, transactionPicker}) => {
   console.log('tr', transactionPicker);
   return (
