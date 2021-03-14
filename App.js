@@ -7,27 +7,17 @@
  */
 
 import React from 'react';
-
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
+import NavigationRouter from './app/navigation/navigation';
+import {TProvider, TContext} from './app/context/TransactionsContext';
 const App = () => {
+  console.log(111);
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Project Transactions</Text>
-      </View>
-    </SafeAreaView>
+    <>
+      <TProvider>
+        <TContext.Consumer>{() => <NavigationRouter />}</TContext.Consumer>
+      </TProvider>
+    </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
